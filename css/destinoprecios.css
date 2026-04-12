@@ -1,0 +1,170 @@
+/* --- ESTILOS PUNTO 2 - ZERPA --- */
+
+/* Contenedor de la Galería */
+.galeria-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 200px; /* Altura base para las filas */
+    gap: 15px;
+    padding: 20px 0;
+}
+
+/* Tarjetas individuales */
+.tarjeta {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de Zoom al pasar el click */
+.tarjeta:hover img {
+    transform: scale(1.1);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen no se deforme */
+    transition: transform 0.3s ease;
+}
+
+/* Masonry: Hacer que algunas tarjetas sean más altas que otras */
+/* Esto cumple con lo de "imágenes de diferentes alturas" */
+.tarjeta.cultural {
+    grid-row: span 2; /* Ocupa 2 filas */
+}
+
+.tarjeta.naturaleza {
+    grid-row: span 1; /* Ocupa 1 fila */
+}
+
+/* Capa oscura que aparece al pasar el mouse por la imagen */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Invisible por defecto */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.tarjeta:hover .overlay {
+    opacity: 1; /* Se vuelve visible al hacer hover */
+}
+
+.overlay span {
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 10px 20px;
+}
+
+/* Ocultar los inputs radio físicamente */
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilo de los "botones" (labels) */
+.botones-filtros label {
+    padding: 10px 20px;
+    background: #e0e0e0;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+/* Cambiar color cuando el radio asociado está seleccionado */
+#cultural:checked ~ .botones-filtros label[for="cultural"],
+#naturaleza:checked ~ .botones-filtros label[for="naturaleza"],
+#todos:checked ~ .botones-filtros label[for="todos"] {
+    background: #2c3e50;
+    color: white;
+}
+
+/* LÓGICA DEL FILTRO */
+/* Si se elige 'cultural', ocultamos lo que NO es cultural */
+#cultural:checked ~ .galeria-masonry .tarjeta:not(.cultural) {
+    display: none;
+}
+
+/* Si se elige 'naturaleza', ocultamos lo que NO es naturaleza */
+#naturaleza:checked ~ .galeria-masonry .tarjeta:not(.naturaleza) {
+    display: none;
+}
+
+/* --- ESTILOS PUNTO 5 - TABLA Y TOOLTIPS --- */
+
+.contenedor-precios {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tabla-precios {
+    width: 100%;
+    border-collapse: collapse; /* Para que las líneas de la tabla sean finas */
+    margin-top: 20px;
+}
+
+.tabla-precios th, .tabla-precios td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-precios th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* EFECTO DE RESALTADO AL PASAR EL CURSOR (Pide la consigna) */
+.tabla-precios tbody tr:hover {
+    background-color: #f1f4f8; /* Color suave de resaltado */
+    transform: scale(1.01); /* Un pequeño realce */
+    transition: all 0.2s ease;
+}
+
+/* ESTILO PARA LOS TOOLTIPS (Pide la consigna) */
+.info-tooltip {
+    position: relative;
+    cursor: help;
+    color: #3498db;
+    text-decoration: underline dotted;
+    font-weight: bold;
+}
+
+/* El "globito" del tooltip */
+.info-tooltip::after {
+    content: attr(data-tooltip); /* Toma el texto del HTML */
+    position: absolute;
+    bottom: 125%; /* Aparece arriba del texto */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0; /* Invisible por defecto */
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+/* Mostrar el tooltip al pasar el mouse */
+.info-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
