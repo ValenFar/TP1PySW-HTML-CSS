@@ -23,6 +23,11 @@ h1 {
 }
 
 /* FILTROS */
+
+input[type="radio"] {
+  display: none;
+}
+
 .filtros {
   text-align: center;
   margin: 20px;
