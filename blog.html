@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog de Destinos</title>
+    <link rel="stylesheet" href="css/blogDestino.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+
+  <body>
+          <nav class="navbar">
+        <a class="navbar_title" href="index.html">
+          <img
+            src="/img/EscudoProvincial.png"
+            alt="EscudoJujuy"
+            class="navbar_logo"
+          />
+          Turismo Jujuy
+        </a>
+
+        <ul class="navbar_menu">
+          <li><a href="agencias.html">Agencias</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="destinosprecios.html">Destinos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    <section class="inicio">
+      <div class="inicio-box">
+        <h1>Blog de Destinos</h1>
+        <h3>Somo Vida-Jujuy</h3>
+        <p>
+          Aprovecha al máximo cada momento del viaje. Evita complicaciones y
+          reserva con antelación.
+        </p>
+      </div>
+    </section>
+
+    <!-- FILTROS -->
+    <input type="radio" name="filtro" id="todos" checked />
+    <input type="radio" name="filtro" id="cultura" />
+    <input type="radio" name="filtro" id="naturaleza" />
+
+    <div class="filtros">
+      <label for="todos">Todos</label>
+      <label for="cultura">Cultural</label>
+      <label for="naturaleza">Naturaleza</label>
+    </div>
+
+    <!-- GRID -->
+    <section class="grid">
+      <a href="#detalle-p" class="card cultura">
+        <img src="img/purmamarca.jpg" />
+        <div class="contenido">
+          <h2>Purmamarca</h2>
+          <p>Cultura y tradición del norte.</p>
+        </div>
+      </a>
+
+      <a href="#detalle-s" class="card naturaleza">
+        <img src="img/SalinasG3.jpg" />
+        <div class="contenido">
+          <h2>Salinas Grandes</h2>
+          <p>Paisaje blanco infinito.</p>
+        </div>
+      </a>
+
+      <a href="#detalle-i" class="card cultura">
+        <img src="img/iruya.jpg" />
+        <div class="contenido">
+          <h2>Iruya</h2>
+          <p>Pueblo entre montañas.</p>
+        </div>
+      </a>
+
+      <a href="#detalle-h" class="card cultura">
+        <img src="img/humahuaca.jpg" />
+        <div class="contenido">
+          <h2>Humahuaca</h2>
+          <p>Historia y cultura ancestral.</p>
+        </div>
+      </a>
+
+      <a href="#detalle-t" class="card cultura">
+        <img src="img/tilcara.jpg" />
+        <div class="contenido">
+          <h2>Tilcara</h2>
+          <p>Tradición y festivales únicos.</p>
+        </div>
+      </a>
+
+      <a href="#detalle-y" class="card naturaleza">
+        <img src="img/yungas.jpeg" />
+        <div class="contenido">
+          <h2>Yungas</h2>
+          <p>Selva y biodiversidad impresionante.</p>
+        </div>
+      </a>
+    </section>
+
+    <section class="detalles">
+      <div id="detalle-p" class="detalle">
+        <h2>Purmamarca</h2>
+        <p>
+          Purmamarca es un pintoresco pueblo ubicado en la provincia de Jujuy,
+          en el corazón de la espectacular Quebrada de Humahuaca, un lugar
+          declarado Patrimonio de la Humanidad por la UNESCO y famoso por el
+          Cerro de los Siete Colores. Las montañas ofrecen un paisaje insólito y
+          la pequeña localidad combina la riqueza cultural andina con
+          arquitectura colonial.
+        </p>
+        <p>NORTE ARGENTINO</p>
+        <a href="#">Cerrar</a>
+        <a href="destinosprecios.html" class="btn-precio">Ver precios</a>
+      </div>
+
+      <div id="detalle-s" class="detalle">
+        <h2>Salinas Grandes</h2>
+        <p>
+          Este vasto desierto de sal, ubicado a más de 3.400 metros sobre el
+          nivel del mar, es una joya escondida entre las provincias de Jujuy y
+          Salta, y representa no solo un espectáculo visual inigualable, sino
+          también una ventana abierta a la historia geológica de la región.
+        </p>
+        <p>NORTE ARGENTINO</p>
+        <a href="#">Cerrar</a>
+        <a href="destinosprecios.html" class="btn-precio">Ver precios</a>
+      </div>
+
+      <div id="detalle-i" class="detalle">
+        <h2>Iruya</h2>
+        <p>
+          Iruya se encuentra a una altura 2.780 msnm. y parece un pueblo colgado
+          de las montañas en un balcón sobre el río Iruya. Tiene una población
+          aproximada de 1.500 habitantes. La economía del pueblo se basa en la
+          agricultura, empleo público y el turismo.
+        </p>
+        <a href="#">Cerrar</a>
+        <a href="destinosprecios.html" class="btn-precio">Ver precios</a>
+      </div>
+
+      <div id="detalle-h" class="detalle">
+        <h2>Humahuaca</h2>
+        <p>
+          Humahuaca es uno de los destinos más visitados de la Quebrada de
+          Humahuaca. Su historia se remonta a tiempos precolombinos, cuando la
+          zona estuvo habitada por pueblos originarios que formaban parte de la
+          cultura omaguaca, una civilización andina que dominaba la región del
+          altiplano y que se caracterizaba por su agricultura en terrazas, su
+          cerámica y sus sistemas de intercambio con otras comunidades del
+          norte. Gracias a su ubicación estratégica en el valle del río Grande,
+          Humahuaca fue un importante punto de conexión entre el altiplano
+          boliviano y las tierras bajas del noroeste argentino, lo que la
+          convirtió en un centro comercial y cultural clave.
+        </p>
+        <a href="#">Cerrar</a>
+        <a href="destinosprecios.html" class="btn-precio">Ver precios</a>
+      </div>
+
+      <div id="detalle-t" class="detalle">
+        <h2>Tilcara</h2>
+        <p>
+          Las ruinas preincas y los animados festivales son solo algunos de los
+          puntos destacables que ofrece Tilcara. En las afueras de la pequeña
+          ciudad argentina, el Pucará de Tilcara atrae a aficionados a la
+          arqueología y turistas a los que les intrigan las antiguas
+          civilizaciones. El Pucará de Tilcara, las ruinas de piedra de una
+          tribu de guerreros, proporciona una perspectiva de los triunfos y
+          batallas diarias de las personas que prosperaron en la zona hace más
+          de 10 000 años.
+        </p>
+        <a href="#">Cerrar</a>
+        <a href="destinosprecios.html" class="btn-precio">Ver precios</a>
+      </div>
+
+      <div id="detalle-y" class="detalle">
+        <h2>Yungas</h2>
+        <p>
+          La zona de yungas es dueña de paisajes de selva que parecen salidos de
+          películas, y en toda su extensión - además de muchos destinos
+          naturales - comprende los poblados de: San Francisco, Valle Grande,
+          Valle Colorado, Pampichuela, San Lucas, Santa Ana, Caspalá, Calilegua,
+          Caimancito, Palma Sola, Yuto, San Pedro de Jujuy, Fraile Pintado,
+          Libertador General San Martín, y El Fuerte
+        </p>
+        <a href="#">Cerrar</a>
+        <a href="destinosprecios.html" class="btn-precio">Ver precios</a>
+      </div>
+    </section>
+
+    <!-- COMENTARIOS -->
+    <section class="comentarios">
+      <h2>Experiencias de Viajeros</h2>
+
+      <div class="comentario">
+        <div class="avatar" data-letra="L"></div>
+        <p>“Los mejores lugares y mágico, volvería sin dudarlo 10/10.”</p>
+      </div>
+
+      <div class="comentario">
+        <div class="avatar" data-letra="A"></div>
+        <p>“Paisajes únicos y buenas vibras , lo mejor del norte argentino.”</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-cont">
+        <section class="footer-newsletter">
+          <h2>Newsletter</h2>
+          <p>Recibi ofertas, novedades y recomendaciones de viaje.</p>
+
+          <form class="newsletter-form" action="#" method="post">
+            <label for="newsletter-email">Correo electronico</label>
+            <div>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                placeholder="tuemail@ejemplo.com"
+              />
+              <button type="submit">Suscribirme</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="footer-social">
+          <h2>Redes sociales</h2>
+          <ul class="footer-icon">
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                  />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M16.5 7.5l0 .01" />
+                </svg>
+                Instagram
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                  />
+                </svg>
+                Facebook
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                  <path
+                    d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+                  />
+                </svg>
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-map">
+          <h2>Ubicacion</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4345.613978841019!2d-65.29557312387284!3d-24.18887858494738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20Universidad%20Nacional%20de%20Jujuy!5e1!3m2!1ses!2sar!4v1776134865984!5m2!1ses!2sar"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
