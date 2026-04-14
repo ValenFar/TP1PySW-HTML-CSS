@@ -6,7 +6,7 @@
     <title>Turismo Jujuy</title>
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="header">
@@ -43,7 +43,7 @@
         <div class="hero_content">
           <h1>Descubri lugares unicos</h1>
           <p>Experiencias de viaje bien planificadas, simples y memorables.</p>
-          <a class="hero_btn" href="destinos.html">Ver destinos</a>
+          <a class="hero_btn" href="destinosprecios.html">Ver destinos</a>
         </div>
       </section>
 
@@ -54,9 +54,93 @@
       </div>
     </header>
 
-    <main class="main">
-      <h2>Tu proxima aventura empieza aca</h2>
-      <p>Explora nuestras recomendaciones y arma tu viaje ideal.</p>
+<main class="main">
+      <section class="destacados-section" aria-labelledby="destacados-title">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Destinos destacados</p>
+            <h2 id="destacados-title">Tres paradas para empezar a viajar</h2>
+          </div>
+          <a class="section-link" href="destinosprecios.html"
+            >Ver todos los destinos</a
+          >
+        </div>
+
+        <div class="destacados-grid">
+          <article class="destino-card">
+            <img src="./img/purmamarca.jpg" alt="Purmamarca" />
+            <div class="destino-card-body">
+              <span class="destino-tag">Cultural</span>
+              <h3>Purmamarca</h3>
+              <p>
+                Color, feria artesanal y el Cerro de los 7 Colores en una sola
+                parada.
+              </p>
+            </div>
+          </article>
+
+          <article class="destino-card">
+            <img src="./img/salinasG3.jpg" alt="Salinas Grandes" />
+            <div class="destino-card-body">
+              <span class="destino-tag">Aventura</span>
+              <h3>Salinas Grandes</h3>
+              <p>
+                Un paisaje inmenso para fotos, caminatas y excursiones simples.
+              </p>
+            </div>
+          </article>
+
+          <article class="destino-card">
+            <img src="./img/iruya.jpg" alt="Iruya" />
+            <div class="destino-card-body">
+              <span class="destino-tag">Naturaleza</span>
+              <h3>Iruya</h3>
+              <p>
+                Un pueblo de altura con ritmo tranquilo, senderos y vistas muy
+                lindas.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contador-section" aria-labelledby="contador-title">
+        <div class="section-head section-head-light">
+          <div>
+            <p class="section-kicker section-kicker-light">Comunidad viajera</p>
+            <h2 id="contador-title">Todo lo que tenemos para ofrecerte!</h2>
+          </div>
+        </div>
+
+        <div class="contador-box">
+          <div class="contador-copy">
+            <div class="contador-animado" aria-label="500 mas visitantes">
+              <span>+120</span>
+              <span>+250</span>
+              <span>+380</span>
+              <span>+500</span>
+            </div>
+            <p>visitantes ya eligieron estas ideas para armar su viaje.</p>
+          </div>
+
+          <ul class="contador-stats">
+            <li>
+              <strong>12</strong>
+              <span>Rutas sugeridas</span>
+            </li>
+            <li>
+              <strong>6</strong>
+              <span>Tipos de experiencias</span>
+            </li>
+            <li>
+              <strong>100%</strong>
+              <span>Guiado por los mejores lugares!</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
     </main>
     <footer class="footer">
       <div class="footer-cont">
@@ -82,7 +166,7 @@
           <h2>Redes sociales</h2>
           <ul class="footer-icon">
             <li>
-              <a href="#">
+              <a href="https://instagram.com" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -106,7 +190,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="https://facebook.com" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -128,7 +212,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="https://whatsapp.com" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

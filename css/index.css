@@ -1,0 +1,211 @@
+body {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url("../img/cerro14colores.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* El fondo no se mueve al hacer scroll */
+  background-repeat: no-repeat;
+}
+
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-head h2 {
+  color: #13293d;
+}
+
+.section-kicker {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2f7d32;
+}
+
+.section-link {
+  color: #2f7d32;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+.destacados-section,
+.testimonios-section {
+  margin-bottom: 3rem;
+}
+
+.destacados-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.destino-card {
+  background: #ffffff;
+  border: 1px solid #e2eaf3;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 26px rgba(19, 41, 61, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.destino-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(19, 41, 61, 0.15);
+}
+
+.destino-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.destino-card:hover img {
+  transform: scale(1.05);
+}
+
+.destino-card-body {
+  padding: 1.1rem;
+}
+
+.destino-tag {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  background: #eef7e9;
+  color: #2f7d32;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.destino-card h3 {
+  margin-bottom: 0.45rem;
+  color: #13293d;
+}
+
+.destino-card p {
+  color: #516173;
+  line-height: 1.55;
+}
+
+.contador-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #12351a 0%, #1f5a27 55%, #2f7d32 100%);
+  color: #ffffff;
+}
+
+.section-head-light h2,
+.section-kicker-light {
+  color: #ffffff;
+}
+
+.contador-box {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contador-copy p {
+  max-width: 28rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contador-animado {
+  position: relative;
+  height: 3.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #f8c94c;
+}
+
+.contador-animado span {
+  position: absolute;
+  inset: 0 auto auto 0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: contadorCambio 10s infinite;
+}
+
+.contador-animado span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.contador-animado span:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.contador-animado span:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.contador-animado span:nth-child(4) {
+  animation-delay: 6s;
+}
+
+@keyframes contadorCambio {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  8% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  18% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  26% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.contador-stats {
+  list-style: none;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.contador-stats li {
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.contador-stats strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 1.6rem;
+  color: #f8c94c;
+}
+
+.contador-stats span {
+  color: rgba(255, 255, 255, 0.92);
+}
