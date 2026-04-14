@@ -3,24 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Turismo</title>
+    <title>Turismo Jujuy</title>
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/pages.css" />
   </head>
   <body>
-    <header>
-      <ul>
-        <li><a href="/agencias.html">Agencias</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/destinos.html">Destinos</a></li>
-      </ul>
-    </header>
-    <h1>no entiendo nada</h1>
-    <p id="texto1">texto de prueba</p>
+    <header class="header">
+      <nav class="navbar">
+        <a class="navbar_title" href="index.html">Turismo Jujuy</a>
 
-    <footer class="footer">
-    </footer>
+        <ul class="navbar_menu">
+          <li><a href="agencias.html">Agencias</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <iframe
+          class="hero-yt"
+          src="https://www.youtube.com/embed/TWhVhzpu040?autoplay=1&mute=1&controls=0&loop=1&playlist=TWhVhzpu040&modestbranding=1&rel=0"
+          title="Video de presentacion"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <div class="hero_overlay"></div>
+
+        <div class="hero_content">
+          <h1>Descubri lugares unicos</h1>
+          <p>Experiencias de viaje bien planificadas, simples y memorables.</p>
+          <a class="hero__cta" href="destinos.html">Ver destinos</a>
+        </div>
+      </section>
+
+      <div class="boton-header">
+        <a href="agencias.html">Asesoramiento</a>
+        <a href="blog.html">Guias de viaje</a>
+        <a href="contacto.html">Consulta rapida</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <h2>Tu proxima aventura empieza aca</h2>
+      <p>Explora nuestras recomendaciones y arma tu viaje ideal.</p>
+    </main>
+
+    <footer class="footer"></footer>
   </body>
 </html>
