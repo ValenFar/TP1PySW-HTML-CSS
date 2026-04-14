@@ -19,7 +19,48 @@
 
     <section id="pagina-destinos">
         <h2>Nuestros Destinos</h2>
+    <div class="botones-filtros">
+        <label for="todos">Mostrar Todos</label>
+        <label for="cultural">Cultural</label>
+        <label for="naturaleza">Naturaleza</label>
+    </div>
 
+    <div class="galeria-masonry">
+        
+        <article class="tarjeta cultural">
+            <div class="overlay">
+                <span>Ver Detalles</span>
+            </div>
+            <img src="./img/Purmamarca.jpg" alt="Purmamarca">
+            <div class="info">
+                <h3>Purmamarca</h3>
+                <p>Cultura y tradición en la Quebrada.</p>
+            </div>
+        </article>
+
+        <article class="tarjeta naturaleza">
+            <div class="overlay">
+                <span>Ver Detalles</span>
+            </div>
+            <img src="./img/SalinasG3.jpg" alt="Salinas Grandes">
+            <div class="info">
+                <h3>Salinas Grandes</h3>
+                <p>Naturaleza y paisajes infinitos.</p>
+            </div>
+        </article>
+
+        <article class="tarjeta cultural">
+            <div class="overlay">
+                <span>Ver Detalles</span>
+            </div>
+            <img src="./img/Iruya.jpg" alt="Iruya">
+            <div class="info">
+                <h3>Iruya</h3>
+                <p>Encanto cultural en las alturas.</p>
+            </div>
+        </article>
+    </div>
+</section>
         <input type="radio" name="filtro" id="todos" checked>
         <input type="radio" name="filtro" id="cultural">
         <input type="radio" name="filtro" id="naturaleza">
@@ -31,7 +72,7 @@
             <label for="naturaleza">Naturaleza</label>
             <label for="maravillas">Maravillas</label>
         </div>
-
+        
         <div class="galeria-masonry">
             
             <article class="tarjeta cultural">
