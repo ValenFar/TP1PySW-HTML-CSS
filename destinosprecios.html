@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto 2 - Galería de Destinos</title>
+    <title>Galería de Destinos</title>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/index.css">
@@ -12,99 +12,242 @@
 </head>
 <body>
 
-<section id="pagina-destinos">
-    <h2>Nuestros Destinos</h2>
+    <header class="hero-seccion">
+        <h1 class="titulo-principal">Bienvenidos a Jujuy</h1>
+        <p class="subtitulo-hero">Explora y averigua todo lo que JUJUY tiene para ofrecerte</p>
+    </header>
 
-    <input type="radio" name="filtro" id="todos" checked>
-    <input type="radio" name="filtro" id="cultural">
-    <input type="radio" name="filtro" id="naturaleza">
+    <section id="pagina-destinos">
+        <h2>Nuestros Destinos</h2>
 
-    <div class="botones-filtros">
-        <label for="todos">Mostrar Todos</label>
-        <label for="cultural">Cultural</label>
-        <label for="naturaleza">Naturaleza</label>
-    </div>
+        <input type="radio" name="filtro" id="todos" checked>
+        <input type="radio" name="filtro" id="cultural">
+        <input type="radio" name="filtro" id="naturaleza">
+        <input type="radio" name="filtro" id="maravillas">
 
-    <div class="galeria-masonry">
-        
-        <article class="tarjeta cultural">
-            <div class="overlay">
-                <span>Ver Detalles</span>
-            </div>
-            <img src="./img/Purmamarca.jpg" alt="Purmamarca">
-            <div class="info">
-                <h3>Purmamarca</h3>
-                <p>Cultura y tradición en la Quebrada.</p>
-            </div>
-        </article>
-
-        <article class="tarjeta naturaleza">
-            <div class="overlay">
-                <span>Ver Detalles</span>
-            </div>
-            <img src="./img/SalinasG3.jpg" alt="Salinas Grandes">
-            <div class="info">
-                <h3>Salinas Grandes</h3>
-                <p>Naturaleza y paisajes infinitos.</p>
-            </div>
-        </article>
-
-        <article class="tarjeta cultural">
-            <div class="overlay">
-                <span>Ver Detalles</span>
-            </div>
-            <img src="./img/Iruya.jpg" alt="Iruya">
-            <div class="info">
-                <h3>Iruya</h3>
-                <p>Encanto cultural en las alturas.</p>
-            </div>
-
+        <div class="botones-filtros">
+            <label for="todos">Mostrar Todos</label>
+            <label for="cultural">Cultural</label>
+            <label for="naturaleza">Naturaleza</label>
+            <label for="maravillas">Maravillas</label>
         </div>
-</section>
 
-<hr>
+        <div class="galeria-masonry">
+            
+            <article class="tarjeta cultural">
+                <div class="overlay">
+                    <span>Ver Detalles</span>
+                </div>
+                <img src="./img/purmamarca.jpg" alt="Purmamarca">
+                <div class="info">
+                    <h3>Purmamarca</h3>
+                    <p>Cultura y tradición en la Quebrada.</p>
+                </div>
+            </article>
 
-    <!-- '' --- SECCIÓN DE PRECIOS - ZERPA --- '' --> 
+            <article class="tarjeta maravillas">
+                <div class="overlay">
+                    <span>Ver Detalles</span>
+                </div>
+                <img src="./img/salinasG3.jpg" alt="Salinas Grandes">
+                <div class="info">
+                    <h3>Salinas Grandes</h3>
+                    <p>Paisajes infinitos y aventura extrema.</p>
+                </div>
+            </article>
 
-    <section id="seccion-precios" class="contenedor-precios">
-        <h2>Comparativa de Paquetes 2026</h2>
-        <table class="tabla-precios">
-            <thead>
-                <tr>
-                    <th>Destino</th>
-                    <th>Tipo de Paquete</th>
-                    <th>Precio Final</th>
-                    <th>Servicios Incluidos</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Purmamarca</td>
-                    <td>Cultural Premium</td>
-                    <td>$45.000</td>
-                    <td>
-                        <span class="info-tooltip" data-tooltip="Incluye guía bilingüe y acceso a museos">Pase Libre</span>
-                    </td>
-                </tr>
-                <tr class="destacado">
-                    <td>Salinas Grandes</td>
-                    <td>Aventura Extrema</td>
-                    <td>$55.000</td>
-                    <td>
-                        <span class="info-tooltip" data-tooltip="Traslado en 4x4 y equipo de fotografía">Todo Terreno</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Iruya</td>
-                    <td>Naturaleza Relax</td>
-                    <td>$62.000</td>
-                    <td>
-                        <span class="info-tooltip" data-tooltip="Noche en hostería típica y pensión completa">Estadía Real</span>
-                    </td>
-                </tr>
-            </tbody>
-    </table>
-</section>
+            <article class="tarjeta cultural">
+                <div class="overlay">
+                    <span>Ver Detalles</span>
+                </div>
+                <img src="./img/iruya.jpg" alt="Iruya">
+                <div class="info">
+                    <h3>Iruya</h3>
+                    <p>Encanto cultural en las alturas.</p>
+                </div>
+            </article>
+
+            <article class="tarjeta cultural">
+                <div class="overlay">
+                    <span>Ver Detalles</span>
+                </div>
+                <img src="./img/tilcara.jpg" alt="Tilcara">
+                <div class="info">
+                    <h3>Tilcara</h3>
+                    <p>El histórico Pucará en el corazón de la Quebrada.</p>
+                </div>
+            </article>
+
+            <article class="tarjeta cultural maravillas naturaleza">
+                <div class="overlay">
+                    <span>Ver Detalles</span>
+                </div>
+                <img src="./img/humahuaca.jpg" alt="Humahuaca">
+                <div class="info">
+                    <h3>Humahuaca</h3>
+                    <p>Historia, monumentos y tradición viva.</p>
+                </div>
+            </article>
+
+            <article class="tarjeta naturaleza maravillas">
+                <div class="overlay">
+                    <span>Ver Detalles</span>
+                </div>
+                <img src="./img/yungas.jpg" alt="Parque Nacional Calilegua - Las Yungas">
+                <div class="info">
+                    <h3>Las Yungas</h3>
+                    <p>Selva de montaña y biodiversidad única.</p>
+                </div>
+            </article>
+
+        </div> </section>
+
+    <hr>
+
+    <!-- SECCIÓN PRECIOS PUNTO5 -->
     
-</body>
+<section id="seccion-precios" class="contenedor-paquetes">
+        <h2>Excursiones y Paquetes 2026</h2>
+
+        <div class="lista-paquetes">
+            
+            <article class="tarjeta-horizontal">
+                <div class="img-contenedor">
+                    <img src="./img/purmamarca.jpg" alt="Purmamarca">
+                </div>
+                <div class="info-paquete">
+                    <div class="cabecera-paquete">
+                        <h3>Excursión a Purmamarca</h3>
+                        <span class="badge-tipo">Cultural Premium</span>
+                    </div>
+                        <p class="descripcion">Descubrí la magia del Cerro de los 7 Colores con nuestro recorrido guiado. Paseá por sus calles de tierra, visitá la histórica iglesia y recorré la colorida feria artesanal en la plaza central. Sumergite en la cultura andina de la Quebrada mientras probás la gastronomía típica y te llevás recuerdos inolvidables de este rincón mágico.</p>
+                    
+                    <div class="pie-paquete">
+                        <div class="servicios">
+                            <span class="icono">✔</span> Incluye: Pase Libre (Guía y museos)
+                        </div>
+                        <div class="precio-accion">
+                            <span class="precio">$45.000 ARS</span>
+                            <button class="btn-reservar">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta-horizontal">
+                <div class="img-contenedor">
+                    <img src="./img/salinasG3.jpg" alt="Salinas Grandes">
+                </div>
+                <div class="info-paquete">
+                    <div class="cabecera-paquete">
+                        <h3>Excursión a Salinas Grandes</h3>
+                        <span class="badge-tipo">Aventura Extrema</span>
+                    </div>
+                    <p class="descripcion">Un viaje inolvidable por la imponente Cuesta de Lipán, alcanzando más de 4000 metros de altura, hasta llegar al tercer salar más grande de Sudamérica. Caminá sobre este inmenso mar de sal cristalizada, conocé los piletones de extracción y prepará tu cámara para capturar las fotos con perspectiva más divertidas y surrealistas.</p>
+                    
+                    <div class="pie-paquete">
+                        <div class="servicios">
+                            <span class="icono">✔</span> Incluye: Todo Terreno y fotografía
+                        </div>
+                        <div class="precio-accion">
+                            <span class="precio">$55.000 ARS</span>
+                            <button class="btn-reservar">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta-horizontal">
+                <div class="img-contenedor">
+                    <img src="./img/iruya.jpg" alt="Iruya">
+                </div>
+                <div class="info-paquete">
+                    <div class="cabecera-paquete">
+                        <h3>Excursión a Iruya</h3>
+                        <span class="badge-tipo">Naturaleza Relax</span>
+                    </div>
+                    <p class="descripcion">Dejate sorprender por este hermoso pueblo colgado de la montaña. El viaje es una aventura en sí misma, recorriendo caminos de cornisa y atravesando majestuosos valles de altura. Disfrutá de la paz absoluta, recorré sus callecitas empinadas de piedra y conectá con la esencia pura de la cultura norteña en un entorno natural sin igual.</p>
+                    
+                    <div class="pie-paquete">
+                        <div class="servicios">
+                            <span class="icono">✔</span> Incluye: Estadía Real (Pensión completa)
+                        </div>
+                        <div class="precio-accion">
+                            <span class="precio">$62.000 ARS</span>
+                            <button class="btn-reservar">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="tarjeta-horizontal">
+                <div class="img-contenedor">
+                    <img src="./img/tilcara.jpg" alt="Tilcara">
+                </div>
+                <div class="info-paquete">
+                    <div class="cabecera-paquete">
+                        <h3>Excursión a Tilcara</h3>
+                        <span class="badge-tipo">Cultural Premium</span>
+                    </div>
+                    <p class="descripcion">Explorá el imponente Pucará de Tilcara, un sitio arqueológico único que te transportará en el tiempo. Viví de cerca la historia precolombina en el corazón de la Quebrada, visitá el Jardín Botánico de Altura y disfrutá de la vibrante energía del pueblo. Una opción ideal para combinar historia, paisajes deslumbrantes y tradición viva.</p>
+                    
+                    <div class="pie-paquete">
+                        <div class="servicios">
+                            <span class="icono">✔</span> Incluye: Pase Libre y entrada al Pucará
+                        </div>
+                        <div class="precio-accion">
+                            <span class="precio">$42.000 ARS</span>
+                            <button class="btn-reservar">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta-horizontal">
+                <div class="img-contenedor">
+                    <img src="./img/humahuaca.jpg" alt="Humahuaca">
+                </div>
+                <div class="info-paquete">
+                    <div class="cabecera-paquete">
+                        <h3>Excursión a Humahuaca</h3>
+                        <span class="badge-tipo">Experiencia Completa</span>
+                    </div>
+                    <p class="descripcion">Recorré sus pintorescas calles empedradas y deslumbrate con el imponente Monumento a los Héroes de la Independencia. Sentí la tradición viva de Jujuy paseando por el mercado local y visitando la antigua iglesia. Una experiencia cultural súper completa que te conectará de lleno con las raíces más profundas del Norte Argentino.</p>
+                    
+                    <div class="pie-paquete">
+                        <div class="servicios">
+                            <span class="icono">✔</span> Incluye: Guía local y almuerzo regional
+                        </div>
+                        <div class="precio-accion">
+                            <span class="precio">$48.000 ARS</span>
+                            <button class="btn-reservar">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta-horizontal">
+                <div class="img-contenedor">
+                    <img src="./img/yungas.jpg" alt="Las Yungas">
+                </div>
+                <div class="info-paquete">
+                    <div class="cabecera-paquete">
+                        <h3>Excursión a Las Yungas</h3>
+                        <span class="badge-tipo">Naturaleza Relax</span>
+                    </div>
+                    <p class="descripcion">Adentrate en el corazón de la selva de montaña recorriendo los senderos del Parque Nacional Calilegua. Disfrutá de un trekking guiado rodeado de una vegetación exuberante, ideal para el avistaje de aves exóticas y fauna autóctona. Una aventura perfecta para desconectar de la rutina y respirar aire puro en plena biodiversidad.</p>
+                    
+                    <div class="pie-paquete">
+                        <div class="servicios">
+                            <span class="icono">✔</span> Incluye: Trekking guiado y seguro médico
+                        </div>
+                        <div class="precio-accion">
+                            <span class="precio">$50.000 ARS</span>
+                            <button class="btn-reservar">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            </div> </section> </body>
 </html>
