@@ -117,11 +117,12 @@ body {
     opacity: 1; /* Se vuelve visible al hacer hover */
 }
 
-.overlay span {
+.overlay a {
     color: white;
     font-weight: bold;
     border: 2px solid white;
     padding: 10px 20px;
+    text-decoration: none; /* Saca la rayita de enlace */
 }
 
 /* Ocultar los inputs radio físicamente */
@@ -290,6 +291,8 @@ input[type="radio"] {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
+    text-decoration: none; /* Saca la rayita de enlace */
+    display: inline-block; /* Hace que se comporte como un bloque/botón */
 }
 
 .btn-reservar:hover {
