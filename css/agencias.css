@@ -1,14 +1,18 @@
 #container{
- display:grid;
-     grid-template-columns: repeat(3, 1fr);
-    gap:20px;
-    padding: 0 60px;
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 100px;
 }
 p{font-size: 18px;
     font-weight:inherit;
      margin-bottom: 10px;
-
 }
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+ 
 .card{
     perspective: 1000px;
 
@@ -16,11 +20,14 @@ p{font-size: 18px;
 .interior{
     position:relative;
     width:100%;
-    height:350px;
+    min-height: 420px;
+    height: auto;
     transition: transform 0.8s;
     transform-style: preserve-3d;
         border: 3px solid black;
 }
+
+ 
 
 .card:hover .interior{
     transform: rotateY(180deg);
@@ -90,7 +97,7 @@ p{font-size: 18px;
     text-align: center;
 }
  .imga { 
-    width: 200px;
-    height: 150px;
-    object-fit: contain;
+    width: 90%;
+    height: 330px;
+    object-fit: cover;
 }
