@@ -51,6 +51,14 @@ body {
   max-width: 800px; /* Evita que el texto sea una línea larguísima */
 }
 
+/* Centrar la sección de destinos y su contenido */
+#pagina-destinos {
+    max-width: 1000px; /* Mismo ancho que usaste para los paquetes */
+    margin: 0 auto; /* Centra todo el bloque en pantallas grandes */
+    text-align: center; /* Centra el título y los botones de filtro */
+    padding: 0 20px; /* Deja un poco de aire a los costados para celulares */
+}
+
 /* Contenedor de la Galería */
 .galeria-masonry {
   display: grid;
@@ -58,6 +66,7 @@ body {
   grid-auto-rows: 200px; /* Altura base para las filas */
   gap: 15px;
   padding: 20px 0;
+  justify-content: center;
 }
 
 /* Tarjetas individuales */
