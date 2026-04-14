@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 2 - Galería de Destinos</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/destinoprecios.css">
+</head>
+<body>
+
+<section id="pagina-destinos">
+    <h2>Nuestros Destinos</h2>
+
+    <input type="radio" name="filtro" id="todos" checked>
+    <input type="radio" name="filtro" id="cultural">
+    <input type="radio" name="filtro" id="naturaleza">
+
+    <div class="botones-filtros">
+        <label for="todos">Mostrar Todos</label>
+        <label for="cultural">Cultural</label>
+        <label for="naturaleza">Naturaleza</label>
+    </div>
+
+    <div class="galeria-masonry">
+        
+        <article class="tarjeta cultural">
+            <div class="overlay">
+                <span>Ver Detalles</span>
+            </div>
+            <img src="./img/Purmamarca.jpg" alt="Purmamarca">
+            <div class="info">
+                <h3>Purmamarca</h3>
+                <p>Cultura y tradición en la Quebrada.</p>
+            </div>
+        </article>
+
+        <article class="tarjeta naturaleza">
+            <div class="overlay">
+                <span>Ver Detalles</span>
+            </div>
+            <img src="./img/SalinasG3.jpg" alt="Salinas Grandes">
+            <div class="info">
+                <h3>Salinas Grandes</h3>
+                <p>Naturaleza y paisajes infinitos.</p>
+            </div>
+        </article>
+
+        <article class="tarjeta cultural">
+            <div class="overlay">
+                <span>Ver Detalles</span>
+            </div>
+            <img src="./img/Iruya.jpg" alt="Iruya">
+            <div class="info">
+                <h3>Iruya</h3>
+                <p>Encanto cultural en las alturas.</p>
+            </div>
+
+        </div>
+</section>
+
+<hr>
+
+    <!-- '' --- SECCIÓN DE PRECIOS - ZERPA --- '' --> 
+
+    <section id="seccion-precios" class="contenedor-precios">
+        <h2>Comparativa de Paquetes 2026</h2>
+        <table class="tabla-precios">
+            <thead>
+                <tr>
+                    <th>Destino</th>
+                    <th>Tipo de Paquete</th>
+                    <th>Precio Final</th>
+                    <th>Servicios Incluidos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Purmamarca</td>
+                    <td>Cultural Premium</td>
+                    <td>$45.000</td>
+                    <td>
+                        <span class="info-tooltip" data-tooltip="Incluye guía bilingüe y acceso a museos">Pase Libre</span>
+                    </td>
+                </tr>
+                <tr class="destacado">
+                    <td>Salinas Grandes</td>
+                    <td>Aventura Extrema</td>
+                    <td>$55.000</td>
+                    <td>
+                        <span class="info-tooltip" data-tooltip="Traslado en 4x4 y equipo de fotografía">Todo Terreno</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Iruya</td>
+                    <td>Naturaleza Relax</td>
+                    <td>$62.000</td>
+                    <td>
+                        <span class="info-tooltip" data-tooltip="Noche en hostería típica y pensión completa">Estadía Real</span>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+</section>
+    
+</body>
+</html>
